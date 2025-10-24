@@ -10,8 +10,8 @@ function WeatherCard({ weather }) {
         <div className="mx-auto flex flex-col justify-center items-center gap-2 border-[1px] border-white mx-auto px-4 py-4 mb-4">
             <h1 className="text-xl font-bold">
                 {weather.location.name}, {weather.location.country}
-
             </h1>
+            <h2>{weather.location.region}</h2>
             <img className="h-24 w-24"
                 src={weather.current.condition.icon}
                 alt="weather icon" />

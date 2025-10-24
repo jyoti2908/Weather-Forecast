@@ -15,7 +15,7 @@ function App() {
       const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`)
       const data = await response.json()
       setWeather(data)
-      console.log("Display the Data", data);
+      console.log("Display the Data", data); // optional
     } catch (error) {
       console.log("Fetched Data Error", error);
     }

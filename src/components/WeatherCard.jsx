@@ -7,7 +7,7 @@ function WeatherCard({ weather }) {
     const temp = unit === "metric" ? weather.current.temp_c : weather.current.temp_f;
 
     return (
-        <div className="mx-auto flex flex-col justify-center items-center gap-2 border-[1px] border-white mx-auto px-4 py-4 mb-4">
+        <div className="mx-auto flex flex-col justify-center items-center gap-2 border-[1px] border-gray-400 px-4 py-4 mb-4">
             <h1 className="text-xl font-bold">
                 {weather.location.name}, {weather.location.country}
             </h1>
